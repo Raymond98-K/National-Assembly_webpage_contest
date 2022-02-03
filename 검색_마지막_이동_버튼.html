@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<script>
+/*  function GotoPage(docStart) { //IDOL 페이지 이동 처리
+    var form = document.pageForm;
+    form.docStart.value = docStart;
+    form.submit();
+    return false;
+} */
+
+function GotoPage(docStart) { //IDOL_ 페이지 이동 처리
+    var form = document.pageForm;
+    form.docStart.value = docStart;
+    form.minDate.value = document.dForm.sdate.value;
+    form.maxDate.value = document.dForm.edate.value;
+    form.submit();
+    return false;
+}
+
+function GotoPage_WN(docStart) { //와이즈넛 페이지 이동 처리
+    var form = document.pageForm;
+    form.docStart.value = docStart * form.docPage.value + 1;
+    form.submit();
+    return false;
+}
+</script>
+
+
+
+<a title="다음10페이지이동" href="JavaScript:GotoPage_WN(10);">
+<img alt="다음" class="next" src="./검색 - 대한민국국회_files/ico_next_1.gif"></a>
+
+<!--그니까 저 매개변수 10이 10페이지 만큼 이동이라는 뜻이네-->
+<!--138이면 --> <!--if n%10  n/10+1 else n/10-->
+
+
+
+
+
+
+</html>
