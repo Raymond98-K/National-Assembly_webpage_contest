@@ -106,17 +106,23 @@
     
             <tr>
                 <td>
-                    ㆍ<label for="selItem">디렉토리 선택</label>
-    
+                
+                    <label for="selItem">ㆍ디렉토리 선택</label>
+        
+                    <br>
+
+                   
                     <select title="메뉴선택" name="selItem" id="selItem">
     
                         <option value=0000 selected> 통합검색</option>
+                        <!--
                         <option value=>-------------------</option>
                         <option value=src03>국회활동</option>
                         <option value=src04>의원활동</option>
                         <option value=src05>알림마당</option>
                         <option value=src06>소통마당/국회소개</option>
                         <option value=1111>정보시스템</option>
+                        -->
                         <option value=>--------------------</option>
                         <option value=src08>의안정보</option>
                         <option value=src09>국회법률정보</option>
@@ -125,26 +131,30 @@
                         <option value=src22>국민동의청원</option>
     
                     </select>
-    
+
+            
                 </td>
-    
+                
+               
+
                 <td>
                     ㆍ<label for="query">검색</label>
-    
-    
+                    <br>
+                    
                     <label style="display:none" for="query">게시물 검색</label>
-                    <input type="text" style="width:321px" id="query" name="query" />
+                    <input type="text" style="width:80%" id="query" name="query" />
                     <input type="image" alt="검색하기" />
     
                 </td>
     
-                <td>
-                    <a href="#" class="detailS_open btntxt02" title="상세검색 펼치기">검색영역</a>
-                    <span class="btnts01 t2" style="margin-left:7px;">
+                <td class="middleTextTD">
+                    <span class="btnts01 t2" style="margin-right:10%;">
                         <a href="#"
                             onclick="window.open('./wisenut_Help.jsp','help','left=0, top=0, resizable=no, scrollbars=no, width=646, height=600');return false"
                             title="도움말 새창열림">검색도움말 </a>
                     </span>
+
+                    <a href="#" class="detailS_open btntxt02" title="상세검색 펼치기">상세검색</a>
                 </td>
     
     
@@ -152,37 +162,40 @@
             </tr>
             <!--디렉토리 선택 끝-->
     
-      
     
     
             <!--검색범위 설정 시작-->
     
-            <tr>
+            <tr class="middleLine">
 
                 <td>
-                    ㆍ<label for="search_limit1">검색범위</label></dt>
-    
-    
-    
+                    <label for="search_limit1">ㆍ검색범위</label>
+
+                    <br>
+
                     <input value="ALL" name="schArea" id="schArea1" type="radio" checked="checked" />
-                    <label for="schArea1">전체</label>
+                    <label for="schArea1" class="tdCheckerPadding">전체</label>
                     <input value="TI" name="schArea" id="schArea2" type="radio" />
-                    <label for="schArea2">제목</label>
+                    <label for="schArea2" class="tdCheckerPadding">제목</label>
                     <input value="CONT" name="schArea" id="schArea3" type="radio" />
-                    <label for="schArea3">내용</label>
+                    <label for="schArea3" class="tdCheckerPadding">내용</label>
                 </td>
 
-                <td>
-                    ㆍ<label>보기 방식</label>
+
+                <td class="middleBlock">
+                    <label>ㆍ보기 방식</label>
+
+                    <br>
+
                     <input value="basic" name="schscreen" id="schscreen1" type="radio" />
-                    <label for="schscreen1">기존 창</label>
+                    <label for="schscreen1" class="tdCheckerPadding">기존 창</label>
                     <input value="pop_up" name="schscreen" id="schscreen2" type="radio" />
-                    <label for="schscreen2">새 창</label>
+                    <label for="schscreen2" class="tdCheckerPadding">새 창</label>
                 </td>
 
-                <td>
+                <td class="middleTextTD">
                     <input id="research" name="research" type="checkbox" />
-                    <label for="research">결과 내 재검색 </label>
+                    <label for="research" class="tdCheckerPadding">결과 내 재검색 </label>
                 </td>
 
 
@@ -194,27 +207,27 @@
 
              <!--디렉토리 선택 시작-->
             <tr>
-                <td>
-                    ㆍ<label for="chkDirSpaceAll">디렉토리 선택</label>
+                <td style="padding-bottom: 0px;">
+                    <label for="chkDirSpaceAll">ㆍ세부 사항 선택</label>
                 </td>
             </tr>
                 
                 
             <tr>
             
-                <td>
+                <td >
                     <input onClick="ToggleAll('chkMenu1',0,3);" id="chkMenu1" name="chkMenu1" type="checkbox" />
-                    <label for="chkMenu1" class="lb_all">전체</label>
+                    <label for="chkMenu1" class="tdCheckerPadding">전체</label>
                 </td>
             
                 <td>
                     <input onClick="CheckAll('chkMenu2',4,8);" value="src08" id="checkItem5" name="checkItem" type="checkbox" />
-                    <label for="checkItem5">의안정보시스템</label>
+                    <label for="checkItem5" class="tdCheckerPadding">의안정보시스템</label>
                 </td>
             
                 <td>
                     <input onClick="CheckAll('chkMenu2',4,8);" value="src09" id="checkItem6" name="checkItem" type="checkbox" />
-                    <label for="checkItem6">국회법률정보시스템</label>
+                    <label for="checkItem6" class="tdCheckerPadding">국회법률정보시스템</label>
                 </td>
             
             </tr>
@@ -223,17 +236,17 @@
 
                 <td>
                     <input onClick="CheckAll('chkMenu2',4,8);" value="src10" id="checkItem7" name="checkItem" type="checkbox" />
-                    <label for="checkItem7">회의록시스템</label>
+                    <label for="checkItem7" class="tdCheckerPadding">회의록시스템</label>
                 </td>
 
                 <td>
                     <input onClick="CheckAll('chkMenu2',4,8);" value="src11" id="checkItem8" name="checkItem" type="checkbox" />
-                    <label for="checkItem8">국감정보시스템</label>
+                    <label for="checkItem8" class="tdCheckerPadding">국감정보시스템</label>
                 </td>
 
                 <td>
                     <input onClick="CheckAll('chkMenu2',4,8);" value="src22" id="checkItem9" name="checkItem" type="checkbox" />
-                    <label for="checkItem9">국민동의청원</label>
+                    <label for="checkItem9" class="tdCheckerPadding">국민동의청원</label>
                 </td>
 
 
