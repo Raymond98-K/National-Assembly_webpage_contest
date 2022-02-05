@@ -12,7 +12,10 @@ li{
     color:white;
 }
 
-
+.verticalLine{ /*수직선*/
+    border-right: thick solid black;
+    margin:0%;
+}
 
 
 #searchbox{
@@ -65,14 +68,43 @@ li{
 .top_directory{
     border: 1px solid black;
     width: 90%;
+    text-align: left;
 }
 
-.top_directory tr{
-    border:1px solid black;
+
+#selItem{
+    width:80%;
 }
 
 .top_directory td{
-    border:1px solid black;
+    border-bottom: 1px solid transparent;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 175%;
+ }
+ 
+
+.middleLine td{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.middleBlock{
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+}
+
+.middleTextTD{
+    text-align: center;
+}
+
+
+.tdCheckerPadding{
+    padding-right: 3%;
+    padding-left: 1%;
 }
 
 
