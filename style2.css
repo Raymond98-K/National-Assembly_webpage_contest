@@ -58,19 +58,20 @@ tr td{
     margin-right:30px;
 }
 
-/*디렉토리 관련*/
+
 .search_in dl{
-   display: block;  /*큰 단락끼리는 block*/
+   display: block;  
 }
 
+/*
 .search_in dt{
-    display: inline; /*세부 사항끼리는 inline*/
- }
-
+    display: inline-block; 세부 사항끼리는 inline
+ }*/
+/*
  .search_in dd{
-    display: inline;
+    display: block;
  }
-
+*/
 .op_auto{
     display: inline;
 }
