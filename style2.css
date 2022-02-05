@@ -4,17 +4,15 @@ li{
     list-style: none;
 }
 
-tr td{
+
+.banner td{
     table-layout: fixed;
     border: solid  black;
     background-color: blue;
     color:white;
 }
 
-.top_directory{
-    display: flex;
-    justify-content: center;
-}
+
 
 
 #searchbox{
@@ -63,15 +61,21 @@ tr td{
    display: block;  
 }
 
-/*
-.search_in dt{
-    display: inline-block; 세부 사항끼리는 inline
- }*/
-/*
- .search_in dd{
-    display: block;
- }
-*/
+
+.top_directory{
+    border: 1px solid black;
+    width: 90%;
+}
+
+.top_directory tr{
+    border:1px solid black;
+}
+
+.top_directory td{
+    border:1px solid black;
+}
+
+
 .op_auto{
     display: inline;
 }
