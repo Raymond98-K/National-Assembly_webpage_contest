@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+    <style>
+    #fixed{
+        position:fixed;
+        border-radius:50%;
+        bottom:30px;
+        right:25px;
+        height:10px;
+        width:10px;        
+        padding:30px;
+        background:black;
+        color:white; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+
+
+<body style="margin:10%; margin-top: 0;">
+
+    <!--헤더 파트 시작-->
+    <header id="head">
+    
+    
+        <div id="top">
+            <!--통합검색 && 검색창 && 로그인~english까지-->
+            <!--div로 묶고 내부 자식들 모두 inline-block처리함-->
+    
+            <!--국회 로고-->
+            <img src="logo.gif" style="display: inline-block; margin-top: 10px; margin-right: 10px;">
+    
+            <h1 style="display: inline-block">통합검색</h1>
+    
+    
+            <!--메인 베너 맨 위의 로그인 쪽-->
+            <div id="mainbanner">
+    
+                <!--li들 모두 margin 변경해서 줄 맞춤 css 참조-->
+                <ul id="banner">
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>어린이</li>
+                    <li>english</li>
+                </ul>
+            </div>
+    
+    
+    
+    
+        </div>
+        <!--top 종료-->
+    
+    
+        <hr>
+    
+        <h4 style="display: inline-block;">국회 통합검색 서비스 입니다.</h4>
+        <!--사이즈 키움-->
+    
+    
+        <div style="display: inline-block; float:right; margin-top: 25px;">
+            <!--불안정한 오른쪽 정렬-->
+            <a href="#" id="print"><img src="printer.gif" alt="인쇄하기" title="새창에서 열림" /></a>
+            <a href="#facebook" name="facebook" class="sns" target="_blank" style="margin-left: 5px;" title="새창에서 열림"><img
+                    src="facebook.gif" alt="페이스북" /></a>
+            <a href="#twitter" name="twitter" class="sns" target="_blank" style="margin-left: 5px;" title="새창에서 열림"><img
+                    src="twitter.gif" alt="트위터" /></a>
+        </div>
+    
+
+
+    
+        <table class="top_directory">
+    
+            <tr>
+                <td>
+                
+                    <label for="selItem">ㆍ디렉토리 선택</label>
+        
+                    <br>
+
+                   
+                    <select title="메뉴선택" name="selItem" id="selItem">
+    
+                        <option value=0000 selected> 통합검색</option>
+                        <!--
+                        <option value=>-------------------</option>
+                        <option value=src03>국회활동</option>
+                        <option value=src04>의원활동</option>
+                        <option value=src05>알림마당</option>
+                        <option value=src06>소통마당/국회소개</option>
+                        <option value=1111>정보시스템</option>
+                        -->
+                        <option value=>--------------------</option>
+                        <option value=src08>의안정보</option>
+                        <option value=src09>국회법률정보</option>
+                        <option value=src10>회의록</option>
+                        <option value=src11>국감정보</option>
+                        <option value=src22>국민동의청원</option>
+    
+                    </select>
+
+            
+                </td>
+                
+               
+
+                <td>
+                    ㆍ<label for="query">검색</label>
+                    <br>
+                    
+                    <label style="display:none" for="query">게시물 검색</label>
+                    <input type="text" style="width:80%" id="query" name="query" />
+                    <input type="image" src="search.gif" width="18%" alt="검색하기" style="float: right;"/>
+    
+                </td>
+    
+                <td class="middleTextTD">
+                    
+                    <a href="#"class="search_help" style="margin-right: 8%; text-decoration: none;">검색도움말 </a>
+                
+                    <a href="#" class="search_more" style="text-decoration: none;">상세검색</a>
+
+                </td>
+    
+    
+    
+            </tr>
+            <!--디렉토리 선택 끝-->
+    
+    
+    
+            <!--검색범위 설정 시작-->
+    
+            <tr class="middleLine">
+
+                <td>
+                    <label for="search_limit1">ㆍ검색범위</label>
+
+                    <br>
+
+                    <input value="ALL" name="schArea" id="schArea1" type="radio" checked="checked" />
+                    <label for="schArea1" class="tdCheckerPadding">전체</label>
+                    <input value="TI" name="schArea" id="schArea2" type="radio" />
+                    <label for="schArea2" class="tdCheckerPadding">제목</label>
+                    <input value="CONT" name="schArea" id="schArea3" type="radio" />
+                    <label for="schArea3" class="tdCheckerPadding">내용</label>
+                </td>
+
+
+                <td class="middleBlock">
+                    <label>ㆍ보기 방식</label>
+
+                    <br>
+
+                    <input value="basic" name="schscreen" id="schscreen1" type="radio" />
+                    <label for="schscreen1" class="tdCheckerPadding">기존 창</label>
+                    <input value="pop_up" name="schscreen" id="schscreen2" type="radio" />
+                    <label for="schscreen2" class="tdCheckerPadding">새 창</label>
+                </td>
+
+                <td class="middleTextTD">
+                    <input id="research" name="research" type="checkbox" />
+                    <label for="research" class="tdCheckerPadding">결과 내 재검색 </label>
+                </td>
+
+
+
+
+            </tr>
+            <!--검색범위 설정 끝-->
+   
+
+             <!--디렉토리 선택 시작-->
+            <tr>
+                <td style="padding-bottom: 0px;">
+                    <label for="chkDirSpaceAll">ㆍ세부 사항 선택</label>
+                </td>
+            </tr>
+                
+                
+            <tr>
+            
+                <td >
+                    <input onClick="ToggleAll('chkMenu1',0,3);" id="chkMenu1" name="chkMenu1" type="checkbox" />
+                    <label for="chkMenu1" class="tdCheckerPadding">전체</label>
+                </td>
+            
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src08" id="checkItem5" name="checkItem" type="checkbox" />
+                    <label for="checkItem5" class="tdCheckerPadding">의안정보시스템</label>
+                </td>
+            
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src09" id="checkItem6" name="checkItem" type="checkbox" />
+                    <label for="checkItem6" class="tdCheckerPadding">국회법률정보시스템</label>
+                </td>
+            
+            </tr>
+
+            <tr>
+
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src10" id="checkItem7" name="checkItem" type="checkbox" />
+                    <label for="checkItem7" class="tdCheckerPadding">회의록시스템</label>
+                </td>
+
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src11" id="checkItem8" name="checkItem" type="checkbox" />
+                    <label for="checkItem8" class="tdCheckerPadding">국감정보시스템</label>
+                </td>
+
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src22" id="checkItem9" name="checkItem" type="checkbox" />
+                    <label for="checkItem9" class="tdCheckerPadding">국민동의청원</label>
+                </td>
+
+
+            </tr>
+            <!--디렉토리 선택 끝-->
+    
+    
+        </table>
+    
+    </header>
+    <!--헤더 파트 종료-->
+
+
+
+
+    <table class="banner">
+        <tr>
+            <td>통합검색</td>
+            <td>국회활동</td>
+            <td>의원활동</td>
+            <td>알림마당</td>
+            <td>소통마당/국회소개</td>
+            <td>국회정보서비스</td>
+
+        </tr>
+    </table>
+
+    <h3>국회활동</h3>
+    <h6 class="more1">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h3>의원활동</h3>
+    <h6 class="more2">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h3>알림마당</h3>
+    <h6 class="more3">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h3>소통마당/국회소개</h3>
+    <h6 class="more4">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h3>국회정보서비스</h3>
+    <h6 class="more5">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+
+    <a href="#head"><div id="fixed">TOP</div></a>
+
+
+    <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
+
+
+</body>
+</html>
