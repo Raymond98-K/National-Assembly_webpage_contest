@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="style6.css">
+    <title>Document</title>
+
+
+
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+          
+
+
+
+
+    <style>
+    #fixed{
+        position:fixed;
+        border-radius:50%;
+        bottom:30px;
+        right:25px;
+        height:10px;
+        width:10px;        
+        padding:30px;
+        background:black;
+        color:white; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+
+
+
+
+
+</head>
+
+
+<body style="margin:10%; margin-top: 0;">
+
+    <!--헤더 파트 시작-->
+    <header id="head">
+    
+    
+    
+        <!--나중에 파일 옮겨서 노트북에서 볼껀데 비율 엉망에 터져있잖아? 그럼 나 울꺼임 ㅅㄱ-->
+    
+    
+        <div id="top">
+            <!--통합검색 && 검색창 && 로그인~english까지-->
+            <!--div로 묶고 내부 자식들 모두 inline-block처리함-->
+    
+            <!--국회 로고-->
+            <img src="img/logo.gif" style="display: inline-block; margin:20px;">
+
+            <div id="searchbox">
+              <input id="searchbar" width="30%;" type="text">
+              <i class="fas fa-search"></i>
+              </div>
+       
+    
+            <!--검색 창이랑 돋보기 모양 이모티콘-->
+            <!--
+                <div id="searchbox">
+    
+                    <input id="searchbar" type="text">
+    
+                    <button>
+    
+                        <i class="fas fa-search"></i>
+    
+                    </button>
+                   
+                </div>
+                 -->
+    
+    
+            <!--메인 베너 맨 위의 로그인 쪽-->
+            <div id="mainbanner">
+    
+                <!--li들 모두 margin 변경해서 줄 맞춤 css 참조-->
+                <ul id="banner">
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>어린이</li>
+                    <li>english</li>
+                </ul>
+            </div>
+    
+    
+            <br>
+            <h1 style="display: inline-block">통합검색</h1>
+            
+           <div id="box">
+              <div class="container">
+                <ul id="best_search">
+                  
+                    <li ><p>인기검색어</p>
+                    <li id="realtime-search"> 
+                        <dl class="time1" style="display:show ">
+                            <dd><a class="t" href="#"><div class="num">1</div>특별회계</a></dd>
+                            <dd><a class="t" href="#"><div class="num">2</div>코로나</a></dd>
+                            <dd><a class="t" href="#"><div class="num">3</div>광고</a></dd>
+                            <dd><a class="t" href="#"><div class="num">4</div>의안</a></dd>
+                            <dd><a class="t" href="#"><div class="num">5</div>공직선거법</a></dd>
+                        </dl>
+                        <dl class="time2" style="display:none;">
+                            <dd><a class="t" href="#"><div class="num">6</div>가상자산</a></dd>
+                            <dd><a class="t" href="#"><div class="num">7</div>공제</a></dd>
+                            <dd><a class="t" href="#"><div class="num">8</div>건강도시</a></dd>
+                            <dd><a class="t" href="#"><div class="num">9</div>공공기관</a></dd>
+                            <dd><a class="t" href="#"><div class="num">10</div>장애인복지법</a></dd>
+                        </dl>
+                        <dl class="time3" style="display:none;">
+                            <dd><a class="t" href="#"><div class="num">11</div>개인정보</a></dd>
+                            <dd><a class="t" href="#"><div class="num">12</div>청원</a></dd>
+                            <dd><a class="t" href="#"><div class="num">13</div>법률</a></dd>
+                            <dd><a class="t" href="#"><div class="num">14</div>예결산</a></dd>
+                            <dd><a class="t" href="#"><div class="num">15</div>입법</a></dd>
+                        </dl>
+                        <dl class="time4" style="display:none;">
+                            <dd><a class="t" href="#"><div class="num">16</div>국화</a></dd>
+                            <dd><a class="t" href="#"><div class="num">17</div>문화</a></dd>
+                            <dd><a class="t" href="#"><div class="num">18</div>선거</a></dd>
+                            <dd><a class="t" href="#"><div class="num">19</div>행정</a></dd>
+                            <dd><a class="t" href="#"><div class="num">20</div>표결</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a class="best_add ad1" style="cursor:pointer" onClick="javascript:view('0')">&#62;</a>
+                        <a class="best_add ad2" onClick="javascript:view('1')" style="display:none;cursor:pointer" >&#62;</a>
+                        <a class="best_add ad3" onClick="javascript:view('2')" style="display:none;cursor:pointer" >&#62;</a>
+                        <a class="best_add ad4" onClick="javascript:view('3')" style="display:none;cursor:pointer" >&#60;</a>
+                    </li>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+            
+            
+
+
+
+
+
+
+    
+        </div>
+
+
+
+
+        <script>
+          function view(arg){
+            $(".time1, .time2, .time3, .time4, .ad1, .ad2, .ad3, .ad4").css("display","none");
+            if(arg=="0") {
+                $(".time2, .ad2").css("display","block");
+                viewcount = 1;
+            }
+            else if(arg=="1") {
+                $(".time3, .ad3").css("display","block");
+                viewcount = 2;
+            }
+            else if(arg=="2") {
+                $(".time4, .ad4").css("display","block");
+                viewcount = 3;
+            }
+            else if(arg=="3") {
+                $(".time1, .ad1").css("display","block");
+                viewcount = 0;
+            }
+        }
+        var viewcount = 0;
+        var rtcarousel = setInterval(function(){ view(viewcount) },3000);
+        
+        $("#best_search").mouseenter(function() {
+            clearInterval(rtcarousel);
+        });
+        
+        $("#best_search").mouseleave(function() {
+            rtcarousel = setInterval(function(){ view(viewcount) },3000);
+        });
+          </script>
+        <!--top 종료-->
+    
+    
+        <hr>
+    
+        <h4 style="display: inline-block;">국회 통합검색 서비스 입니다.</h4>
+        <!--사이즈 키움-->
+
+
+        <div id="floating-bar">
+          <i class="fas fa-bars" ></i>
+      
+      </div>  
+          <div id="floating-box" class="hidden">
+              <ul id="header">
+                  <li><img src="img/header1.gif"></li>
+                  <li><img src="img/header2.gif"></li>
+                  <li><img src="img/header3.gif"></li>
+                  <li><img src="img/header4.gif"></li>
+                  <li><img src="img/header5.gif"></li>
+                  <li><img src="img/header6.gif"></li>
+                  <li><img src="img/header7.gif"></li>
+                  <li><img src="img/header8.gif"></li>
+              </ul>
+              <tr>
+                  <td><img src="img/youtube.png" style="width: 50px; height: 50px;"></td>
+                  <td><img src="img/facebook.png" style="width: 50px; height: 50px;"></td>
+                  <td><img src="img/instagram.png" style="width: 50px; height: 50px;"></td>
+                  <td><img src="img/twitter.png" style="width: 50px; height: 50px;"></ing></td>
+              </tr>
+              <button id="exit">나가기</button>
+          </div>
+
+
+
+
+          <div class="picturebox">
+       
+            <div class="swiper-container"> 
+               <div class="swiper-wrapper">
+                   <div class="swiper-slide"><canvas id="myChart2" width="400" height="400"></canvas></div>
+                   <div class="swiper-slide"><canvas id="myChart1" width="400" height="400"></canvas></div>
+                   <div class="swiper-slide"><canvas id="myChart3" width="400" height="400"></canvas></div>
+               </div>
+                   
+               <!--
+                  If we need pagination 
+                 <div class="swiper-pagination"></div>
+           
+                  If we need navigation buttons 
+                 <div class="swiper-button-prev"></div>
+                 <div class="swiper-button-next"></div>
+                 
+                 <div class="swiper-scrollbar"></div>
+              -->
+           
+           </div>
+        </div>
+
+        <div class="picture-describe">
+
+          
+
+
+
+        </div>
+   
+       <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+
+
+
+
+
+
+
+
+      
+    
+        <div class="stfixd_btn" style="display: inline-block; margin-left: 70%;">
+          
+            <!--불안정한 오른쪽 정렬-->
+            
+            <a href="#" id="print"><img src="/resources/web/assm/images/btn/btn_subtfixd01.gif" alt="인쇄하기"
+                    title="새창에서 열림" /></a>
+            <a href="#facebook" name="facebook" class="sns" target="_blank" title="새창에서 열림"><img
+                    src="/resources/web/assm/images/btn/btn_subtfixd02.gif" alt="페이스북" /></a>
+            <a href="#twitter" name="twitter" class="sns" target="_blank" title="새창에서 열림"><img
+                    src="/resources/web/assm/images/btn/btn_subtfixd03.gif" alt="트위터" /></a>
+        </div>
+    
+      
+
+    
+        <table class="top_directory">
+    
+            <tr>
+                <td>
+                
+                    <label for="selItem">ㆍ디렉토리 선택</label>
+        
+                    <br>
+
+                   
+                    <select title="메뉴선택" name="selItem" id="selItem">
+    
+                        <option value=0000 selected> 통합검색</option>
+                        <!--
+                        <option value=>-------------------</option>
+                        <option value=src03>국회활동</option>
+                        <option value=src04>의원활동</option>
+                        <option value=src05>알림마당</option>
+                        <option value=src06>소통마당/국회소개</option>
+                        <option value=1111>정보시스템</option>
+                        -->
+                        <option value=>--------------------</option>
+                        <option value=src08>의안정보</option>
+                        <option value=src09>국회법률정보</option>
+                        <option value=src10>회의록</option>
+                        <option value=src11>국감정보</option>
+                        <option value=src22>국민동의청원</option>
+    
+                    </select>
+
+            
+                </td>
+                
+               
+
+                <td>
+                    ㆍ<label for="query">검색</label>
+                    <br>
+                    
+                    <label style="display:none" for="query">게시물 검색</label>
+                    <input type="text" style="width:80%" id="query" name="query" />
+                    <input type="image" alt="검색하기" />
+    
+                </td>
+    
+                <td class="middleTextTD">
+                    <span class="btnts01 t2" style="margin-right:10%;">
+                        <a href="#"
+                            onclick="window.open('./wisenut_Help.jsp','help','left=0, top=0, resizable=no, scrollbars=no, width=646, height=600');return false"
+                            title="도움말 새창열림">검색도움말 </a>
+                    </span>
+
+                    <a href="#" class="detailS_open btntxt02" title="상세검색 펼치기">상세검색</a>
+                </td>
+    
+    
+    
+            </tr>
+            <!--디렉토리 선택 끝-->
+    
+    
+    
+            <!--검색범위 설정 시작-->
+    
+            <tr class="middleLine">
+
+                <td>
+                    <label for="search_limit1">ㆍ검색범위</label>
+
+                    <br>
+
+                    <input value="ALL" name="schArea" id="schArea1" type="radio" checked="checked" />
+                    <label for="schArea1" class="tdCheckerPadding">전체</label>
+                    <input value="TI" name="schArea" id="schArea2" type="radio" />
+                    <label for="schArea2" class="tdCheckerPadding">제목</label>
+                    <input value="CONT" name="schArea" id="schArea3" type="radio" />
+                    <label for="schArea3" class="tdCheckerPadding">내용</label>
+                </td>
+
+
+                <td class="middleBlock">
+                    <label>ㆍ보기 방식</label>
+
+                    <br>
+
+                    <input value="basic" name="schscreen" id="schscreen1" type="radio" />
+                    <label for="schscreen1" class="tdCheckerPadding">기존 창</label>
+                    <input value="pop_up" name="schscreen" id="schscreen2" type="radio" />
+                    <label for="schscreen2" class="tdCheckerPadding">새 창</label>
+                </td>
+
+                <td class="middleTextTD">
+                    <input id="research" name="research" type="checkbox" />
+                    <label for="research" class="tdCheckerPadding">결과 내 재검색 </label>
+                </td>
+
+
+
+
+            </tr>
+            <!--검색범위 설정 끝-->
+   
+
+             <!--디렉토리 선택 시작-->
+            <tr>
+                <td style="padding-bottom: 0px;">
+                    <label for="chkDirSpaceAll">ㆍ세부 사항 선택</label>
+                </td>
+            </tr>
+                
+                
+            <tr>
+            
+                <td >
+                    <input onClick="ToggleAll('chkMenu1',0,3);" id="chkMenu1" name="chkMenu1" type="checkbox" />
+                    <label for="chkMenu1" class="tdCheckerPadding">전체</label>
+                </td>
+            
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src08" id="checkItem5" name="checkItem" type="checkbox" />
+                    <label for="checkItem5" class="tdCheckerPadding">의안정보시스템</label>
+                </td>
+            
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src09" id="checkItem6" name="checkItem" type="checkbox" />
+                    <label for="checkItem6" class="tdCheckerPadding">국회법률정보시스템</label>
+                </td>
+            
+            </tr>
+
+            <tr>
+
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src10" id="checkItem7" name="checkItem" type="checkbox" />
+                    <label for="checkItem7" class="tdCheckerPadding">회의록시스템</label>
+                </td>
+
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src11" id="checkItem8" name="checkItem" type="checkbox" />
+                    <label for="checkItem8" class="tdCheckerPadding">국감정보시스템</label>
+                </td>
+
+                <td>
+                    <input onClick="CheckAll('chkMenu2',4,8);" value="src22" id="checkItem9" name="checkItem" type="checkbox" />
+                    <label for="checkItem9" class="tdCheckerPadding">국민동의청원</label>
+                </td>
+
+
+            </tr>
+            <!--디렉토리 선택 끝-->
+    
+    
+        </table>
+    
+    </header>
+    <!--헤더 파트 종료-->
+
+
+
+
+    <table class="banner">
+        <tr>
+            <td>통합검색</td>
+            <td>국회활동</td>
+            <td>의원활동</td>
+            <td>알림마당</td>
+            <td>소통마당/국회소개</td>
+            <td>국회정보서비스</td>
+
+        </tr>
+    </table>
+    
+    <div id="search-result">
+      검색어 <b class="point">국회</b> 에 대한 검색결과 입니다.
+    </div>
+
+
+    <h3>국회활동</h3>
+    <h6 class="more1">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h3>의원활동</h3>
+    <h6 class="more2">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h3>알림마당</h3>
+    <h6 class="more3">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h3>소통마당/국회소개</h3>
+    <h6 class="more4">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h3>국회정보서비스</h3>
+    <h6 class="more5">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+
+
+    
+    <div id="mysearch">내가 찾은 검색어(1)</div>
+    <a href="#head"><div id="fixed">TOP</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      var ctx = document.getElementById('myChart1');
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: false,
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          },
+        }
+      });
+    </script>
+
+<script>
+var ctx = document.getElementById('myChart2');
+var myChart = new Chart(ctx, {
+type: 'line',
+data: {
+  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+  datasets: [{
+    label: '# of Votes',
+    data: [12, 19, 3, 5, 2, 3],
+    backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)'
+    ],
+    borderColor: [
+      'rgba(255, 99, 132, 1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)'
+    ],
+    borderWidth: 1
+  }]
+},
+options: {
+  responsive: false,
+  scales: {
+    yAxes: [{
+      ticks: {
+        beginAtZero: true
+      }
+    }]
+  },
+}
+});
+</script>
+
+<script>
+var ctx = document.getElementById('myChart3');
+var myChart = new Chart(ctx, {
+type: 'doughnut',
+data: {
+  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+  datasets: [{
+    label: '# of Votes',
+    data: [12, 19, 3, 5, 2, 3],
+    backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 159, 64, 0.2)'
+    ],
+    borderColor: [
+      'rgba(255, 99, 132, 1)',
+      'rgba(54, 162, 235, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 159, 64, 1)'
+    ],
+    borderWidth: 1
+  }]
+},
+options: {
+  responsive: false,
+  scales: {
+    yAxes: [{
+      ticks: {
+        beginAtZero: true
+      }
+    }]
+  },
+}
+});
+</script>
+
+
+
+
+
+
+
+    <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="index6.js"></script>
+
+
+
+
+</body>
+</html>
