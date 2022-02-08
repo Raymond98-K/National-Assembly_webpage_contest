@@ -1,0 +1,183 @@
+li{
+    float: left;
+    margin: 40px;
+    list-style: none;
+}
+
+
+.banner td{
+    table-layout: fixed;
+    border: solid  black;
+    background-color: blue;
+    color:white;
+}
+
+.verticalLine{ /*수직선*/
+    border-right: thick solid black;
+    margin:0%;
+}
+
+
+#searchbox{
+    display: inline-block; /*inline-block 처리*/
+    border: solid green;
+    height: fit-content;
+    width: 30%;
+    margin: 20px;
+    margin-top: 25px;
+    margin-left: 5%;
+    position: absolute;  /*밑의 searchbar는 absolute하지 말것. 펑 하고 터진다.*/
+    /*top: 20px;*/
+    left:500px;
+}
+
+#searchbar{
+    border: solid black;  /*나중에 투명으로 고쳐야 함*/
+    height: fit-content;
+    width: 90%;  /*위의 box의 90%에 해당하는 길이. 95로 가니까 돋보기 이모티콘이 아랫줄로 내려감.*/
+    margin-top: 0%; /*뭐가 문젠지 모르겠는데 이거 안하니까 박스 밖으로 튀어나가 터짐*/
+}
+
+#mainbanner{
+    display: inline-block;
+    border: solid white;
+    height: fit-content;  /*분명히 fit-content인데 대체 왜 밑에 margin추가를 안하면 div=top 밖으로 터져나가는지 모르겠음*/
+    width: fit-content;
+    position:absolute;
+    /*top:0%;*/
+    /*bottom:0%;*/
+    right: 10%;
+}
+
+#banner{
+    margin:0%;
+    padding: 0%;
+}
+
+#banner li{  
+    margin:25px;  /*한줄에 담기 위해 margin 추가. 위의 fit-content 결국 뭐가 문젠지 못찾아서 내용물의 margin을 강제로 줄였음 원래 40px*/
+    margin-right:30px;
+}
+
+
+.search_in dl{
+   display: block;  
+}
+
+
+.top_directory{
+    border: 1px solid black;
+    width: 100%;
+    text-align: left;
+    margin:0%;
+}
+
+
+#selItem{
+    width:80%;
+}
+
+.top_directory td{
+    
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 175%;
+ }
+ 
+
+.middleLine td{
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.middleBlock{
+    /*
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+    */
+}
+
+.middleTextTD{
+    text-align: center;
+}
+
+
+.tdCheckerPadding{
+    padding-right: 3%;
+    padding-left: 1%;
+}
+
+
+.op_auto{
+    display: inline;
+}
+
+
+.dirCheck label{
+    margin-right: 5em; /*이거 깔끔하게 만드는법 알아내야함*/
+}
+
+
+.search_help{
+    zoom: 1;
+    border: 1px solid #9fa5ac;
+    height: 19px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+}
+
+.search_more{
+    color: #fff;
+    margin-left: 5px;
+    background: #2e78bf;
+    border: 1px solid #2c6499;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+.more1{
+    border:solid white;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 10%;
+    top:370px;
+}
+.more2{
+    border:solid white;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 10%;
+    top:480px;
+}
+.more3{
+    border:solid white;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 10%;
+    top:580px;
+}
+.more4{
+    border:solid white;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 10%;
+    top:680px;
+}
+.more5{
+    border:solid white;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 10%;
+    top:780px;
+}
