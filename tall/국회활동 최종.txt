@@ -49,8 +49,8 @@
         </thead>
         
         <tbody>
-            <tr><td><img src="senate.png"  width="60px" height="60px"></td><td>국회의장</td><td><b>정기회 의사일정<br>결정에 대한 발표문</b></td><td>2014.09.16</td><td><a href="https://www.assembly.go.kr/assm/memact/chairman/chairman04/bodo/bodoView.do?bbs_num=38209&bbs_id=ANCPUBINFO_03&CateGbn=3">URL</a></td></tr>
             <tr><td><img src="senate.png"  width="60px" height="60px"></td><td>국회의장</td><td><b>중국·인도네시아<br>순방 주요 일정 정리</b></td><td>2014.12.23</td><td><a href="https://www.assembly.go.kr/assm/memact/chairman/chairman04/bodo/bodoView.do?bbs_num=38755&bbs_id=ANCPUBINFO_03&CateGbn=3">URL</a></td></tr>
+            <tr><td><img src="senate.png"  width="60px" height="60px"></td><td>국회의장</td><td><b>정기회 의사일정<br>결정에 대한 발표문</b></td><td>2014.09.16</td><td><a href="https://www.assembly.go.kr/assm/memact/chairman/chairman04/bodo/bodoView.do?bbs_num=38209&bbs_id=ANCPUBINFO_03&CateGbn=3">URL</a></td></tr>
         </tbody>
     </table>
     <br>
