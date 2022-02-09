@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>국회활동,의원활동,알림마당</title>
+<style>
+    table{ //border-collapse:collapse;}
+    th{
+        text-align:left;
+        padding:5px;
+        height:25px;
+        width:150px;}
+    td{
+        text-align:center;
+        padding:5px;
+        height:25px;
+        width:150px;}
+    thead{
+        background:black;
+        color:white;}
+    tbody tr:hover{background:orange;}
+    tfoot tr:hover{background:orange;}
+    td, tfoot th{border-bottom: 2px solid grey;}
+</style>
+</head>
+<body>
+    <h2>국회활동</h2>
+    <table>
+        <thead>
+            <tr><th>아이콘(img)</th><th>활동</th><th>제목</th><th>등록일</th><th>내용(URL)</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th></th><th></th><th></th><th></th><th></th></tr>
+        </tfoot>
+        <!--아이콘은 국회 마크 재사용img src,일정 검색시-->
+        <tbody><!--사진 출처:https://www.flaticon.com/premium-icon/board-meeting_2680422?term=conference&page=1&position=16&page=1&position=16&related_id=2680422&origin=search-->
+            <tr><td><img src="meeting.png"  width="60px" height="60px";></td><td>국회회의</td><td><b>2월 7일(월)<br> 주요정치일정</b></td><td>2022.02.07</td><td><a href="https://www.assembly.go.kr/assm/assemact/council/council0103/politicsSch/politicsSchView.do?notice_id=52784">URL</a></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <h6 class="more1">+더보기</h6>
+    <hr>
+    <br>
+   
+    <h2>의원활동</h2>
+    <table>
+        <thead>
+            <tr><th>아이콘(img)</th><th>활동</th><th>제목</th><th>등록일</th><th>내용(URL)</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th></th><th></th><th><th></th><th></th></th></tr>
+        </tfoot>
+        <tbody>
+            <tr><td><img src="senate.png  width="60px" height="60px"></td><td>국회의장</td><td><b>정기회 의사일정<br>결정에 대한 발표문</b></td><td>2014.09.16</td><td><a href="https://www.assembly.go.kr/assm/memact/chairman/chairman04/bodo/bodoView.do?bbs_num=38209&bbs_id=ANCPUBINFO_03&CateGbn=3">URL</a></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <h6 class="more2">+더보기</h6>
+    <hr>
+    <br>
+    
+    <h2>알림마당</h2>
+    <table>
+        <thead>
+            <tr><th>아이콘(img)</th><th>활동</th><th>제목</th><th>등록일</th><th>내용(URL)</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+        </tfoot>
+        <tbody>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <h6 class="more3">+더보기</h6>
+    <hr>
+    <br>
+    
+    <h2>소통마당/국회소개</h2>
+    <table>
+        <thead>
+            <tr><th>아이콘(img)</th><th>활동</th><th>제목</th><th>등록일</th><th>내용(URL)</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th></th><th></th><th></th><th></th><th></th></tr>
+        </tfoot>
+        <tbody>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    <br>
+    
+    <h6 class="more4">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h2>국회정보서비스</h2>
+    <table>
+        <thead>
+            <tr><th>아이콘(img)</th><th>활동</th><th>제목</th><th>등록일</th><th>내용(URL)</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th></th><th></th><th></th><th></th><th></th></tr>
+        </tfoot>
+        <tbody>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    <br>
+    
+    <h6 class="more5">+더보기</h6>
+    <hr>
+    <br>
+    
+</body>
+</html>
+    <br>
+    <br>
+    <h3>소통마당/국회소개</h3>
+    <table>
+        <thead>
+            <tr><th>아이콘(img)</th><th>활동</th><th>제목</th><th>등록일</th><th>내용(URL)</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th></th><th></th><th></th></tr>
+        </tfoot>
+        <tbody>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    <h6 class="more4">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+    <h3>국회정보서비스</h3>
+    <table>
+        <thead>
+            <tr><th>아이콘(img)</th><th>활동</th><th>제목</th><th>등록일</th><th>내용(URL)</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th></th><th></th><th></th></tr>
+        </tfoot>
+        <tbody>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    <h6 class="more5">+더보기</h6>
+    <hr>
+    <br>
+    <br>
+</body>
+</html>
