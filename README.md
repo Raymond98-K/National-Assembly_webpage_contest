@@ -11,4 +11,4 @@
 
 제출일자: 2022.2.10
 
-사용된 픽토그램 출처: https://www.flaticon.com/
+사용된 픽토그램 출처: https://www.flaticon.com/ (상세 url은 코드의 주석 참조)
