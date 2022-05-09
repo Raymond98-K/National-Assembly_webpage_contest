@@ -20,4 +20,5 @@ https://www.assembly.go.kr/assm/notification/notice/notice/noticeView.do?notice_
 사용된 픽토그램 출처: https://www.flaticon.com/ (상세 url은 코드의 주석 참조)
 
 본 코드는 27인치 모니터에 최적화 되어있습니다.
-![KakaoTalk_20220509_214643305](https://user-images.githubusercontent.com/60088470/167412836-f837deda-641a-436b-af03-623268224783.jpg)
+
+![공모전 입상 문자](https://user-images.githubusercontent.com/60088470/167413266-f613ef19-a00d-4c19-9ad4-93f2a699ebf0.jpg)
